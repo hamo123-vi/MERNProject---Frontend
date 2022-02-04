@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
@@ -69,12 +70,35 @@
   grid-gap: 2em;
 }
 
+@media (max-width: 800px) { 
+  .list {
+  grid-template-columns: repeat(2, 1fr);
+  }
+ }
+
+ @media (max-width: 450px) { 
+  .list {
+  grid-template-columns: repeat(1, 1fr);
+  }
+  .card-container {
+    width:300px;
+  }
+ }
+
+
+.book-image {
+  width: 100%;
+}
+
+
 .card-container {
-  width: 250px;
+  max-width: 250px;
+  height: 500px;
   border: 1px solid rgba(0,0,.125);
-  margin: 0 auto;
   border-radius: 5px;
   overflow: hidden;
+  padding: 0 !important;
+  margin-bottom: 25px;
 }
 
 .desc {

@@ -33,14 +33,14 @@ class ShowBookList extends Component {
         }
         return(
             <div className="ShowBookList">
-            <div className="container">
+            <div className="container-fluid">
               <div className="row">
-                <div className="col-md-12">
+                <div className="col-12">
                   <br />
                   <h2 className="display-4 text-center">Books List</h2>
                 </div>
 
-                <div className="col-md-11">
+                <div className="col-12">
                   <Link to="/create-book" className="btn btn-outline-warning float-right">
                     + Add New Book
                   </Link>
